@@ -5,13 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./obsever.js"></script>
-    <!-- <script src="./vue.js"></script> -->
+    <script src="./vue.js"></script>
 </head>
 
 <body>
+    <div id="app">
+        <input type="text" v-myshow="show" v-mymodel="content">{{ content }}
+    </div>
     <script>
-       
+       Vue.directive('myshow', {
+           bind(el, binding){
+               const { value } = binding;
+               const display = value ? '' : 'none';
+               el.style.display = display;
+           },
+           update(el, binding){
+               const { value } = binding;
+               const display = value ? '' : 'none';
+               el.style.display = display;
+
+           }
+       })
+
+       Vue.directive('mymodel', {
+           bind(el, binding, vnode){
+               const { value, expression } = binding;
+               const content = vnode.context;
+               el.value = value;
+               el.oninput = function (){
+                   const inputVal = el.value;
+                   vm[expression] = inputVal;
+               }
+           },
+           update(el, binding){
+               const { value } = binding;
+               el.value = value;
+           }
+       })
+       const vm = new Vue({
+           el: '#app',
+           data: {
+               show: true,
+               content: 'lusaiwen'
+           },
+
+       })
     </script>
 </body>
 
