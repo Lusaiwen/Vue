@@ -1,0 +1,23 @@
+{
+  "id": "1926656",
+  "name": "树形组件",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15367",
+      "name": "下三角形",
+      "font_class": "xiasanjiaoxing",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "6119215",
+      "name": "右-三角",
+      "font_class": "right-s",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}
