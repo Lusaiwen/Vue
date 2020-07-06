@@ -1,0 +1,44 @@
+{
+  "id": "1923675",
+  "name": "日期选择器",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1092163",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "6873830",
+      "name": "向右双箭头",
+      "font_class": "xiangyoushuangjiantou",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "6873832",
+      "name": "向左双箭头",
+      "font_class": "xiangzuoshuangjiantou",
+      "unicode": "e70c",
+      "unicode_decimal": 59148
+    },
+    {
+      "icon_id": "7090055",
+      "name": "上一页（单箭头）",
+      "font_class": "shangyiyedanjiantou",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "7090076",
+      "name": "下一页单箭头",
+      "font_class": "xiayiyedanjiantou",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    }
+  ]
+}
